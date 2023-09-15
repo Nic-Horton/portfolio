@@ -71,7 +71,7 @@
                 class="img-fluid rounded shadow-lg"
                 height="auto"
                 width="300px"
-                src="assets/profile.jpg"
+                src="assets/AboutMePic.png"
                 alt="Profile Image"
               />
             </div>
@@ -79,11 +79,23 @@
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info load-hidden">
               <p class="about-wrapper__info-text">
-                This is where you can describe about yourself. The more you
-                describe about yourself, the more chances you have!
+                I am a passionate software engineer with a deep love for
+                problem-solving. My drive to conquer complex challenges is only
+                rivaled by my enthusiasm for technology, which I see as a
+                powerful tool for transforming ideas into reality.
               </p>
               <p class="about-wrapper__info-text">
-                Extra Information about you! like hobbies and your goals.
+                You can often find me with my quirky golden retriever by my
+                side. I also have a strong appreciation for food, and to balance
+                my love for food, I'm a dedicated fitness enthusiast, committed
+                to regular workouts and maintaining a healthy lifestyle.
+              </p>
+              <p class="about-wrapper__info-text">
+                My journey in technology is not just a career path, it's a
+                pursuit fueled by curiosity and a desire to create meaningful
+                impact through innovation. I'm excited to continue growing,
+                learning, and pushing the boundaries of what's possible in the
+                ever-evolving world of software engineering.
               </p>
               <span class="d-flex mt-3">
                 <a
@@ -221,21 +233,28 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 2</h3>
+                <h3 class="project-wrapper__text-title">ShelfMate</h3>
                 <div>
                   <p class="mb-4">
-                    If the project was collaborative, reflect it in this
-                    description, that will demonstrate communication and/or
-                    leadership skills. Additionally, if you made use of the
-                    mastery of a second language, it will reflect on you
-                    professionalism.
+                    ShelfMate is a pantry inventory management system designed
+                    to streamline item tracking and management. Users can easily
+                    add, edit, and delete items in their inventory. It includes
+                    secure user authentication with bcrypt-encrypted passwords,
+                    utilizes PostgreSQL and Sequelize for database management.
+                    To enhance user convenience, the system employs session
+                    stores and cookies, ensuring data persistence throughout
+                    user sessions.
+                    <br />
+                    <br />
+                    Technologies Used: PostgreSQL, Sequelize, Express.js,
+                    Node.js, Tailwind CSS, Bcrypt, Session Stores, Cookies
                   </p>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="#!"
+                  href="https://shelfmate-io.onrender.com/"
                 >
                   See Live
                 </a>
@@ -243,7 +262,7 @@
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="#!"
+                  href="https://github.com/Nic-Horton/shelfmate"
                 >
                   Source Code
                 </a>
@@ -251,7 +270,11 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a
+                  rel="noreferrer"
+                  href="https://shelfmate-io.onrender.com/"
+                  target="_blank"
+                >
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -262,7 +285,7 @@
                     <img
                       alt="Project Image"
                       class="img-fluid"
-                      src="assets/project.jpg"
+                      src="assets/ShelfMatePic.png"
                     />
                   </div>
                 </a>
@@ -320,10 +343,11 @@
 
         <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
         <p class="footer__text">
-          © 2021 - Template developed by
-          <a rel="noreferrer" href="https://github.com/cobiwave" target="_blank"
-            >Jacobo Martínez</a
-          >
+          ©
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          - Nicolas Horton
         </p>
       </div>
     </footer>

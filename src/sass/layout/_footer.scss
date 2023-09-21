@@ -55,6 +55,64 @@
       transform: translateY(-2px);
     }
   }
+
+  #emailCopy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    width: 5rem;
+    height: 5rem;
+    margin: $default-font-size $default-font-size;
+    transition: all 0.2s ease-in;
+    border: none;
+    background-color: transparent;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+
+  #snackbar {
+    visibility: hidden;
+    color: $white-color;
+    bottom: 30px;
+    font-size: 1.5rem;
+    z-index: 1;
+    position: absolute;
+   
+  }
+  
+  /* This will be activated when the snackbar's class is 'show' which will be added through JS */
+  #snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 1.5s;
+    animation: fadein 0.5s, fadeout 0.5s 1.5s;
+  }
+  
+  /* Animations for fading in and out */
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  
 }
 
 .back-to-top i {
@@ -66,3 +124,4 @@
     transform: translateY(-2px);
   }
 }
+

@@ -308,51 +308,69 @@
               ><img
                 src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg"
                 alt="HTML5"
-            /></a>
+              />
+              <p class="skill-text">HTML5</p></a
+            >
             <a href="https://www.w3schools.com/css/" target="_blank"
               ><img
                 src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg"
                 alt="CSS3"
-            /></a>
+              />
+              <p class="skill-text">CSS3</p></a
+            >
             <a href="https://getbootstrap.com/docs/3.4/" target="_blank"
               ><img
                 src="https://profilinator.rishav.dev/skills-assets/bootstrap-plain.svg"
                 alt="Bootstrap"
-            /></a>
+              />
+              <p class="skill-text">Bootstrap</p></a
+            >
           </div>
           <div class="skill-links">
             <a href="https://www.javascript.com/" target="_blank"
               ><img
                 src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg"
                 alt="JavaScript"
-            /></a>
+              />
+              <p class="skill-text">JavaScript</p></a
+            >
             <a href="https://reactjs.org/" target="_blank"
               ><img
                 src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg"
                 alt="React"
-            /></a>
+              />
+              <p class="skill-text">React</p></a
+            >
             <a href="https://nodejs.org/" target="_blank"
               ><img
                 src="https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg"
                 alt="Node.js"
-            /></a>
+              />
+              <p class="skill-text">Node.js</p></a
+            >
           </div>
           <div class="skill-links">
             <a href="https://redux.js.org/" target="_blank"
               ><img
                 src="https://profilinator.rishav.dev/skills-assets/redux-original.svg"
                 alt="Redux"
-            /></a>
+              />
+              <p class="skill-text">Redux</p></a
+            >
             <a href="https://www.postgresql.org/" target="_blank"
               ><img
                 src="https://profilinator.rishav.dev/skills-assets/postgresql-original-wordmark.svg"
                 alt="PostgreSQL"
-            /></a>
+              />
+              <p class="skill-text">PostgreSQL</p></a
+            >
             <a href="https://expressjs.com/" target="_blank"
               ><img
                 src="https://profilinator.rishav.dev/skills-assets/express-original-wordmark.svg"
                 alt="Express.js"
-            /></a>
+              />
+              <p class="skill-text">Express.js</p></a
+            >
           </div>
         </div>
       </div>
@@ -398,6 +416,16 @@
           >
             <i class="fa fa-github fa-inverse"></i>
           </a>
+          <input
+            type="text"
+            id="myEmail"
+            value="nic.horton00@gmail.com"
+            style="position: absolute; left: -100000px"
+          />
+          <button id="emailCopy" onclick="myFunction()">
+            <p id="snackbar">Email Copied!</p>
+            <i class="fa fa-envelope fa-inverse"></i>
+          </button>
         </div>
 
         <hr />
@@ -415,5 +443,22 @@
     <!-- /END Footer Section -->
 
     <script defer type="module" src="index.js"></script>
+    <script defer>
+      function myFunction() {
+        var copyText = document.getElementById("myEmail");
+        copyText.select();
+        document.execCommand("copy");
+        showSnackBar();
+      }
+
+      function showSnackBar() {
+        var sb = document.getElementById("snackbar");
+        //this is where the class name will be added & removed to activate the css
+        sb.className = "show";
+        setTimeout(() => {
+          sb.className = sb.className.replace("show", "");
+        }, 2000);
+      }
+    </script>
   </body>
 </html>

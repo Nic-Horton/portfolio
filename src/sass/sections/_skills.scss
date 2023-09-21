@@ -70,7 +70,17 @@
     
         &:hover {
           transform: translateY(-2px);
+          .skill-text {
+            visibility:visible;
+            }
         }
       }
+      .skill-text {
+        position:relative;
+        display: flex;
+        justify-content: center;
+        top:6px;
+        visibility:hidden;
+        }
     }
   }

@@ -1,9 +1,9 @@
-function myFunction() {
+document.getElementById("emailCopy").addEventListener("click", () => {
   var copyText = document.getElementById("myEmail");
   copyText.select();
   document.execCommand("copy");
   showSnackBar();
-}
+});
 
 function showSnackBar() {
   var sb = document.getElementById("snackbar");
